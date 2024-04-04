@@ -7,6 +7,7 @@ function init() {
   teszVizszintesEllenorzes();
   palya_valasztas();
   jatekKezdese();
+  Teszt_atlo();
 }
 
 
