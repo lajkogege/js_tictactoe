@@ -167,7 +167,7 @@ function fuggoleges_ell(meret, lista) {
   return szoveg;
 }
 
-function atlo_ell(meret, lista) {
+export function atlo_ell(meret, lista) {
   let szoveg = "";
   //   console.log(meret);
   // bal felső -> jobb alsó átló
