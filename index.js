@@ -9,3 +9,5 @@ function init() {
   jatekKezdese();
   Teszt_atlo();
 }
+
+
