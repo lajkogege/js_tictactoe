@@ -27,10 +27,17 @@ const teszVizszintesEllenorzes = () => {
       lista: [" ", "X", "X", "X", " ", " ", " ", " ", " "],
       vart: " XX@X  @   @",
     },
+    {
+      nev: "Döntetlen lista",
+      lista: ["O", "X", "X", "X", "O", "O", "X", "O", "X"],
+      vart: "OXX@XOO@XOX@",
+    },
   ];
   tesztesetek.forEach((teszt) => {
-    console.log(teszt.nev);
-    console.assert(vizszintes_ell(3, teszt.lista) === teszt.vart, "HIBA");
+    console.assert(
+      vizszintes_ell(3, teszt.lista) === teszt.vart,
+      `HIBA: ${teszt.nev}`
+    );
   });
 };
 
