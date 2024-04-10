@@ -1,15 +1,13 @@
 import { palya_valasztas, jatekKezdese } from "./fuggvenyek.js";
 import teszVizszintesEllenorzes from "./tesztVizszintesEllenorzes.js";
-import { tesztFuggolegesEllhez } from "./tesztFugoleges.js";
-import { Teszt_atlo } from "./teszt_atlo.js";
+import tesztFuggolegesEllenorzes from "./tesztFuggolegesEllenorzes.js";
+import tesztAtlosEllenorzes from "./tesztAtlosEllenorzes.js";
 window.addEventListener("load", init);
 
 function init() {
   teszVizszintesEllenorzes();
-  tesztFuggolegesEllhez();
+  tesztFuggolegesEllenorzes();
+  tesztAtlosEllenorzes();
   palya_valasztas();
   jatekKezdese();
-  Teszt_atlo();
 }
-
-

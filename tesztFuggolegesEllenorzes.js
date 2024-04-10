@@ -1,6 +1,6 @@
-import { vizszintes_ell } from "./fuggvenyek.js";
+import { fuggoleges_ell } from "./fuggvenyek.js";
 
-const teszVizszintesEllenorzes = () => {
+const tesztFuggolegesEllenorzes = () => {
   const tesztesetek = [
     {
       nev: "Csak O betűk",
@@ -19,26 +19,26 @@ const teszVizszintesEllenorzes = () => {
     },
     {
       nev: "Vegyes lista",
-      lista: [" ", " ", "O", "O", " ", "X", "O", " ", "X"],
-      vart: "  O@O X@O X@",
+      lista: ["X", "X", "O", "O", " ", " ", "X", "X", "O"],
+      vart: "XOX@X X@O O@",
     },
     {
       nev: "Szeparálás nélkül nyerne",
-      lista: [" ", "X", "X", "X", " ", " ", " ", " ", " "],
-      vart: " XX@X  @   @",
+      lista: ["X", "O", "X", "O", "X", "O", "O", "X", "O"],
+      vart: "XOO@OXX@XOO@",
     },
     {
       nev: "Döntetlen lista",
-      lista: ["O", "X", "X", "X", "O", "O", "X", "O", "X"],
-      vart: "OXX@XOO@XOX@",
+      lista: ["X", "O", "X", "O", "X", "O", "O", "O", "X"],
+      vart: "XOO@OXO@XOX@",
     },
   ];
   tesztesetek.forEach((teszt) => {
     console.assert(
-      vizszintes_ell(3, teszt.lista) === teszt.vart,
+      fuggoleges_ell(3, teszt.lista) === teszt.vart,
       `Hibás: ${teszt.nev}`
     );
   });
 };
 
-export default teszVizszintesEllenorzes;
+export default tesztFuggolegesEllenorzes;
