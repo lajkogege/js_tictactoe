@@ -36,7 +36,7 @@ const tesztAtlosEllenorzes = () => {
   tesztesetek.forEach((teszt) => {
     console.assert(
       atlo_ell(3, teszt.lista) === teszt.vart,
-      `Hibás: ${teszt.nev}`
+      `Hibás átlós: ${teszt.nev}`
     );
   });
 };

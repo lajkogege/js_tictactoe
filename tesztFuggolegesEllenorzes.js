@@ -36,7 +36,7 @@ const tesztFuggolegesEllenorzes = () => {
   tesztesetek.forEach((teszt) => {
     console.assert(
       fuggoleges_ell(3, teszt.lista) === teszt.vart,
-      `Hibás: ${teszt.nev}`
+      `Hibás függőleges: ${teszt.nev}`
     );
   });
 };

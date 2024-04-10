@@ -36,7 +36,7 @@ const teszVizszintesEllenorzes = () => {
   tesztesetek.forEach((teszt) => {
     console.assert(
       vizszintes_ell(3, teszt.lista) === teszt.vart,
-      `Hibás: ${teszt.nev}`
+      `Hibás vízszintes: ${teszt.nev}`
     );
   });
 };
