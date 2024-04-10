@@ -21,8 +21,8 @@ export function tesztFuggolegesEllhez(){
     console.assert(vart===fuggoleges_ell(3,lista), "A várt eredmény nem stimmel");
 
     nev="általános nincs győzelem, de nincs minden kitöltve";
-    lista=["X","0","X","X","0","X","X","X"," "];
-    vart="XOX@X0X@XX @";
+    lista=["X","X","O","O","0"," ","X","X","O "];
+    vart="XXX@OO @XXO@";
     console.log(nev, lista, vart);
     console.assert(vart===fuggoleges_ell(3,lista), "A várt eredmény nem stimmel");
 
